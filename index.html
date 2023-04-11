@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<style>
+    body {
+        color:#fff;
+        display: grid;
+        place-items: center;
+        font-family: sans-serif;
+        height: 100vh;
+        counter-reset: my-count 10;
+        animation: countdown 10s linear infinite;
+    }
+    body::after{
+        content: counter(my-count);
+        font-size: 20em;
+        color: #000;
+    }
+
+    @keyframes countdown{
+        10% {
+            counter-increment: my-count -1;
+        }
+        20% {
+            counter-increment: my-count -2;
+        }
+        30% {
+            counter-increment: my-count -3;
+        }
+        40% {
+            counter-increment: my-count -4;
+        }
+        50% {
+            counter-increment: my-count -5;
+        }
+        60% {
+            counter-increment: my-count -6;
+        }
+        70% {
+            counter-increment: my-count -7;
+        }
+        80% {
+            counter-increment: my-count -8;
+        }
+        90% {
+            counter-increment: my-count -9;
+        }
+    }
+
+</style>
+</html>
